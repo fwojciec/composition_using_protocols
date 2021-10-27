@@ -3,3 +3,4 @@ flake8
 isort
 mypy
 pytest
+typer==0.4.0
