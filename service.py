@@ -5,7 +5,7 @@ from typing import Protocol
 
 class AddServiceProtocol(Protocol):
     """
-    Has the ability to add two numbers.
+    Represents functionality of adding two numbers.
     """
 
     def add(self, a: int, b: int) -> int:
