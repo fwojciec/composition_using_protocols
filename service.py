@@ -12,7 +12,7 @@ class AddServiceProtocol(Protocol):
         ...
 
 
-class AddService(AddServiceProtocol):
+class AddService:
     """
     Implements AddServiceProtocol.
     """
@@ -21,7 +21,7 @@ class AddService(AddServiceProtocol):
         return a + b
 
 
-class LoggingAddService(AddServiceProtocol):
+class LoggingAddService:
     """
     Implements AddServiceProtocol. Wraps AddService and adds basic logging.
     """
@@ -36,7 +36,7 @@ class LoggingAddService(AddServiceProtocol):
         return result
 
 
-class TimingAddService(AddServiceProtocol):
+class TimingAddService:
     """
     Implements AddServiceProtocol. Wraps AddService and adds timing of method calls.
     """
