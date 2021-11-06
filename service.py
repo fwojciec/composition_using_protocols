@@ -31,7 +31,7 @@ class LoggingAddService:
         self._logger = logger
 
     def add(self, a: int, b: int) -> int:
-        result = a + b
+        result = self._inner.add(a, b)
         self._logger.debug("[add] adding %s and %s gives %s", a, b, result)
         return result
 
